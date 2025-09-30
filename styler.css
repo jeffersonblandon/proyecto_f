@@ -1,0 +1,29 @@
+.hero {
+    background: url('https://picsum.photos/1600/700?health') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar-nav_ms-auto{
+    
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(27, 27, 27);
+  }
+  /* Hover efectos */
+  .card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #ffe600;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+  }

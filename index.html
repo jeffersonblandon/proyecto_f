@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Vida Sana</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styler.css">
+</head>
+<body>
+  <!-- Header + Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Vida Sana</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Tu salud es nuestra prioridad</h1>
+      <p>Atención médica integral y especializada</p>
+      <a href="#contacto" class="btn btn-primary btn-lg mt-3">Agendar cita</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center shadow">
+            <div class="card-body">
+              <h5 class="card-title">Medicina General</h5>
+              <p class="card-text">Consultas médicas para toda la familia con profesionales capacitados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow">
+            <div class="card-body">
+              <h5 class="card-title">Odontología</h5>
+              <p class="card-text">Cuidado dental completo: limpieza, ortodoncia y estética oral.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow">
+            <div class="card-body">
+              <h5 class="card-title">Nutrición</h5>
+              <p class="card-text">Planes alimenticios personalizados para mejorar tu calidad de vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería</h2>
+      <div class="row g-3">
+        <div class="col-md-4"><img src="https://picsum.photos/400/300?1" class="img-fluid rounded" alt="galeria"></div>
+        <div class="col-md-4"><img src="https://picsum.photos/400/300?2" class="img-fluid rounded" alt="galeria"></div>
+        <div class="col-md-4"><img src="https://picsum.photos/400/300?3" class="img-fluid rounded" alt="galeria"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabla de Precios -->
+  <section id="precios" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Planes de Atención</h2>
+      <table class="table table-bordered table-striped text-center">
+        <thead class="table-success">
+          <tr>
+            <th>Plan</th>
+            <th>Servicios</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Básico</td>
+            <td>
+              <ul class="text-start">
+                <li>1 consulta médica</li>
+                <li>Examen general</li>
+              </ul>
+            </td>
+            <td>$50.000</td>
+          </tr>
+          <tr>
+            <td>Avanzado</td>
+            <td>
+              <ul class="text-start">
+                <li>3 consultas médicas</li>
+                <li>Odontología básica</li>
+                <li>Exámenes de laboratorio</li>
+              </ul>
+            </td>
+            <td>$120.000</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>
+              <ul class="text-start">
+                <li>Consultas ilimitadas</li>
+                <li>Nutrición personalizada</li>
+                <li>Chequeo completo</li>
+              </ul>
+            </td>
+            <td>$250.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Correo</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="col-12">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-success btn-lg">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Síguenos en:</p>
+    <div class="col-md-4_text-center_mb-4_mb-md-0">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1klEQVR4nO2Z609bZRzHT7ht64DJdWNlzA7GWoyvjIv+FZqomZkvJJkvfa8hjsNt0DEqQ2DQcqczJijgBXDqFuOyxPhCsxBMHPSyXg6l7WnP6SnQnkL5maeoYeG05zx9oGrCN/m9/3xPn9/v+T3fUtSRjnQkck1BtnYi9OqlcaGhdjw0XTvO/35xNBSsGeNi1aNcrHqED2qGuSXNcHBaYwo2nDexr1A0ZFH/tl74bPOczhzWaycF96UJAVDVjofg4hgqHmpGeage4eHCMJcozVAQnjehCsD5wYCraoDtUJvYyoyD10wJZTpz2KidFETtZBiw4Y0BqBpkE1V5xy9W3vENVBiZ0ozA190NX9VOrgd05jCQwp8bSBhIlLrfx57t9b19aOAvGSG37m54SGdeh0OAh7N9qLxQ0esdpIyQe9DwqjpzeCED8HDmEy+U96zNVxgZ1UHB52YS/nTPWqLKbq/+QNFLecQGMnRsYC98+W0PlHV7oLSbGSCD/zT8Dim8xsjCtXsCjC5G4IFDhF/XtuBnJgYPnSLMWaLw0UNBEr6sexVKP16Foi73lbTgtROhEt3kup8E/rVZHmz8NqTSI5eYFL7EwEBJFxPI70pjxKI5TwL/+iwP4vZOSvi9BiThDQwUdzFQ1Onqx4J/0bxRSXJJXTCx4BLioESPXGJq+FtuVGKRnqnC+fp6koZ9/35YEfzfBmTg4blOF5y66exQRk9DlnZCcJFMm+knUZCSI7QNb85wUDvo260BL2j61xTAu6BQ73CjpVGWP7FVEo7K5aB0474xw6VuWIM0/KmbTijUJ+qyrAG0EpPO+WBkf/N61uNwhgC+oMMB+XrHh/IGJkIzpJfUlkT//rIaI4Iv6HDAyXbH57IGasf4JdIbNi4xPe/bo0Tw+e0OUN2wL8oaqBkLBUjXAykD39uiRPAnbzyFE212v7yBUU4k3W2SG0gfXtX2FFSt9qisgeoRTsSBRxcWH915pqQUiwNwkfi+Mv22rgy+zQ4nWpQZCOB8eUGUXxdSqeknXhl8qx2OtdjkjxBKD3CODamBqzOsIvjjLTY43myTb2LNUHAG58yTGrg87FEG32KDY802+TGKchuchg0RGNiKA5TecimFh7wmyweyBlDohPOSqp/j4b2Fv2qeg2tzHEhZerwWg/qvA1D/FQvvfrlbV77wY8BbIafZ+rKiZa7KyDrTfQaiUSk1Rr+zRpRPm9b98LlNVofiNA8lZunCozmfzEC68HnIAG1pp5QKxX27iRk+PLqgpAzcs0RI4KNUwxM1hSMU96UDn9zAZrrwkN1o6cWCTxgY4ovVfT4/LjxaD5IZSAc+p9HCUvQf6eWmKKvEhUd7TSoDmPCQ3bjyFkUilFXiwKcygA1/fbmPItYUZJ/u8cziPEYkDaxsYsHnNK7MUfSPOeQG0K9gZFTl3Z55pfu8lIFvVzaVw19f+YaiDyjc/UdGyEVZpZJ9PrkBhceGPqAvLyWUVZYY3P5Uj5FkBmTgfcQNq1QF7e4SFPcVdbqjUutBMgPJLqlsNOfppWIq0yo2ONUoMSvUO5x7LykpAwvLG8/uNrTVmVgPcG/YQxENWSh0QrkNij4WveKGi4/FN2I7sLm1A0xoK25+LLBon0crcWKr/C/8zXqkI1H/f/0JPDNnaCVeJTwAAAAASUVORK5CYII=" alt="facebook-new">
+       <img src="data:image/png;base64,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" alt="instagram-new--v1">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGzklEQVR4nO2af2yUdx3Hq86B28QpicbR6Wy7Xml1qETiMGOGRRzL5oZYN3WiMtbyo8CYMRpMrGFubIUqXdhw4de6sYy1a3s/n/vx9O65q+1dYe1ghkSESKAd/5iJhPoDLfAyn6f3rdXs27vrU8wTc+/klfb9uc/n833f08v17nIlJUUVVVRRRRVVVFFF5VbFembMaWBDaQP9pev4S2kDuIKxLP2lDTRUN3JtydVQaT1zPrmWo7esA5dzRLJO+1++fA1Hy9dA2WqGPrWa5Z6VfLDEJZIsZfUsK1/DcTvjGt6srp3GR4Knjg2eevDUMVT9CB8pcakkm6eeYclaWce6aVtc8yiHauqg5lGWi9+Q4Z6NaYY3ZsAVjGVZal+EOmrtrHVkpu0CzHuEkXmrQD3sN/Ux/Hga3MSmPoYk24LvMEuyzlvFhWm7APNXgqD8j/rAjejyOtaCH4Cg/E96wY3o8jrWwu+BoPxPe8GN6PI61qIVICjf+BtwI7q8jrX4YRCU39IDbkSX17GWfBsE5Z9MgY5fpHhssl1PJtk/2fx/kORPT/VQac9ZrM/Vr8vrWEu/BYLyT6dAx9YUF5t6uE23q9Hihq0pTky2w96T5J9bUyy2z0uy9OkUo7lmdHkd674HQVB+WxJycKzRYibwniYLQ9WfSfGgzG9PsbApySXdfJPFlaYkK+w7H6dmW5LzeZyJLq9jLasFQflfWpCL5gTbpPeZGDc1W7yTrf15h8kn7B0Jnphkdovdk+LjzRZn8jlP0OV1rNpvgKD8sxbkweUdCe7K9j+g6i0JzMZG3ttocc2zFv3/PdeSoE0eOc1pPtBicSjPs2x0eR3roa+DoPxzCciHnQne3h0Ze/O0M8G+8XqcTVJriVO+M86FCf2HX/BznVygnXG68j1HocvrWA8/AILyv45DvuzqpkNmXopy/a44v8/WL+6KM0/qu7qpt/vinHo+ykftWpzmQs5Q6PI61vfvB0H53d1QCHvifFfm9pjcvttkNFv/7X6Lmdl9rbtjzM3+Xl/ofoUur2Otug8E5fd1Q4Gc329xi8zuNfn5eN3kVxPP2RNnyT6T0Snst9HldazV94Kg/EsmFEprjJ62Nt5nWVzTapLJ1q68GGWJ7HzZYFaryfmp7Fbo8jrWuntAUP6VGEyRzfa8SdkrMS5I7UCUs60ms6V+IMrzDnajy+tYG+8GQfmDUZgKr0YYbYuwQHa8FmHleD1Kl9T8fq47GOV3U92vy+tYP/wqCMq3R8EBJ9ssbpA9bVFeG69HWCm1jjCfb4/yj6ns1uV1rB9/BQTlOyPggNMd2X93nSazO8KctethRjoNyrMXYfNUduvyOtbmu0BQ3heGKWFwPhDl07IjGOTD8tNvsMRrcEVu94bJyJOkPFn6DHoK3a/L61g/WwyC8iEDpsClUIh7s3d+UTDEsM/Hx2xvsEP1BQ0apRaJcHPI4FwhZ+jyOtaWL4OgfMSAQjEM1mbvWFXE4JzUwgaGvO43DGZEQrxl10KMhsPcbveGWFHIGbq8jvXUnSAob4agIIJst+c6mW0GOTnxtu4g9XJbPExNLMjfpRYL8Yde79hH8LEQr+Z7ji6vYzXdAYLyiSDkSzxAMPsCaGYiQN+79Pw1HsZj7/Xz+IT6XqlZXdyYCHImn7N0eR2r+UsgKJ8KQD4kAwxGo1wvD/Okn5e1fX4GBgZ4v/SlAhjjdR/ftM8LsigZ4HKu83R5HatlIQjK9wUgD872G5RKf2+AJ3L19/rHPgRJB5jTG+Adu+7nXKqLm+0dfrbn2qHL61jPfREE5fv9kIOR/sDY292Ml4cyPq7kmsn4uZz2c6fMHAqwbMJtMfVEmfFxdLIduryO9cICEJR/wweTcOmwl69J30AXdxz2cjFH/7/xcqrfYJYuR7+X6jd8/E03r8vrWHu/AILyb/pAx6CP9dJzOEjZoJc/Ttb7rvNe9k+WZcDHY7pZXV7HenE+CMq/5QU3osvrWAc+B4Lyx7rAjejyOtbBz4Kg/PFOcCO6vI71+m0gKH+yE9yILq9jdX0GBOVPdYAb0eV1rEANI4Ea8HrGXp+fbmf4zOvgJk63j31FxpzPhyRroGYavyITrqI/PBeMKpaJH25n6XA7Q2+3gxuQLENt3C3ZIh6W21nnkp62C2B6WG9WQayK45Fq935NTrKZHk5IVrNq7O33tMioYEaikiNWJSQqGU56qDUq9K/Y/teSLIkKlidu5YRktCoZbKue5q/Mpm9lTqqcIz0V4HIGez3cVHI1dKyaa9PlNKTLSKfLGEmXgyuQLGWk+ypYKxmvyp0vqqiiiiqqqKKKKvk/078AVBB1gaOXWTQAAAAASUVORK5CYII=" alt="twitterx">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwklEQVR4nO2ZP0vDQByGkwsOruIkuGpXP4GLWyuufgk/g4OUXHFQEId2cFFwcHJUsC1mFPGutNpCLdY6VIp/2kT7N/1J0latbbGJklzgHninHMf75HdZLoLA4XA4TCPJdAXJJI5kqiFMwZHIVBMxjUkyWf5TeRET7FhpPDwiJkH7b97l8qgbKUQClgXMY8NAeWRMQaZR6wKYqG4XR73IpGJDgIHi+Cv/JuCLpOG8oIHW0EEpaDAfTntLQClo8J34veYtAa2h9wmodd1bAorXJ+CLpE0JYxKxvApz4RtvCSCXInAB3Mkwxnk+u3sN2xclSJWqUG224bXWMo/i2ukDTG4m2BZY2MvA41sTRnFZfIeZnRS7AtmXOvxGLK+CxKrAuPiPcmwK6G0wz//S4S2sHucheqcOXbeffGZTYF0p9q2ZCCXgJFcZWJd5qrEpML2dHNhn8SA7sK5ca7En0P7xvJepreTYa12fgN29EBfAXMCEC2AuQLkA4gIWGbWRWxE8fbWIadmygHE/z0BxMCJiemZZwPi54HZx1I2Er/yWBTpTIEG3y4uYbNgq/zmJEAkY9/POfhNENY6N7TfP4XA4glN8AJJwntfiYf8PAAAAAElFTkSuQmCC" alt="linkedin">
+      </div>
+
+    <p class="mt-3 mb-0">© 2025 Clínica Vida Sana. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
